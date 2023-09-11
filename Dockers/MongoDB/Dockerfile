@@ -13,5 +13,5 @@ WORKDIR /data/db
 # Exponha a porta padrão do MongoDB 
 EXPOSE 27017
 
-# Inicie o servidor 
+# Inicie o serviço
 CMD ["mongod"]

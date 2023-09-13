@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y git
 # Clone o repositório do GitHub 
 RUN git clone https://github.com/AbilioNB/big_data_e_analytics_2023.git /var/lib/neo4j/import
 
+WORKDIR /var/lib//import/neo4j/big_data_e_analytics_2023/bases_de_dados 
+
+RUN cp * /var/lib/neo4j/import
+
 # Defina um diretório de trabalho padrão
 WORKDIR /var/lib/neo4j
 

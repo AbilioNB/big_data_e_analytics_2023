@@ -11,6 +11,6 @@ services:
       - neo4j_data:/data
     environment:
       NEO4J_AUTH: neo4j/newpassroot
-
+      #Senha para acesso a interface do neo4j
 volumes:
   neo4j_data:
